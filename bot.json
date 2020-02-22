@@ -1,0 +1,12 @@
+{
+  "type" : "ODA",
+  "trackingId" : "B2162FD7-A6B0-49D2-931F-BBD3182FAE3B",
+  "name" : "Phonebookassistant",
+  "displayName" : "Phonebook assistant",
+  "description" : "Phonebook assistant",
+  "version" : "1.0",
+  "intentTrainer" : "Sakura",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "requiresAutoCompleteTraining" : false,
+  "useMappedIntents" : false
+}

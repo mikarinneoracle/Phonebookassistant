@@ -1,0 +1,80 @@
+{
+  "name" : "exit",
+  "description" : "The intent that is used when the user attempts to exit the flow or context that they are currently in.",
+  "trackingId" : "1DDCF0E6-FC96-49E7-8CD2-43EA65D480FC",
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : " never mind",
+    "trackingId" : "7C342B15-60EF-4F7E-9D2C-340F4ACC93EE",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "stop",
+    "trackingId" : "702B710C-B5CF-4493-BBF0-8410584E3101",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " I am done",
+    "trackingId" : "94A944A9-02D2-4D64-BF5D-C7FA11251940",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " bye",
+    "trackingId" : "F77940B3-A9A0-45E6-9713-A33707AB7664",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " cancel",
+    "trackingId" : "E180C08B-071F-4765-AEF7-3321443D76D6",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " exit",
+    "trackingId" : "9F98D2C8-A2BF-459E-8C71-13FCC92E846D",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " quit",
+    "trackingId" : "437FFE7A-5923-47A2-9994-7B6F0D688284",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " goodbye",
+    "trackingId" : "C094FF72-16C6-4DB1-8830-C87C9867CAFC",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " abort",
+    "trackingId" : "578F6F37-B4A1-426F-95C0-B20A7B9DE702",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

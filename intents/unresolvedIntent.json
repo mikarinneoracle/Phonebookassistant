@@ -1,0 +1,88 @@
+{
+  "name" : "unresolvedIntent",
+  "description" : "An intent that matches user input that doesn't match well with the exit and help intents. It improves classification of the exit and help intents (so that particularly ambiguous utterances aren't attributed to those intents).",
+  "trackingId" : "EE312E7D-9EFD-49DF-94D7-2177AED39CA0",
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : " aannv",
+    "trackingId" : "0B4DDA0F-C51C-419B-A52B-D6591D5D8796",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " kluvzx",
+    "trackingId" : "B737B048-D9E6-4DE7-B19B-67F0056CCB7A",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " mkjs",
+    "trackingId" : "89B1F444-6D88-4C1D-8ABF-F13FF1B502D1",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " povvxz",
+    "trackingId" : "F307B033-05BF-46DA-883F-90063693C257",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " hkmv",
+    "trackingId" : "18C9D95B-5478-4841-9D20-AF15E323F079",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " lsww",
+    "trackingId" : "84C8D7BB-3319-4936-97D9-0EEE308969DA",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " vvaaa",
+    "trackingId" : "1D7E2BAF-CB0C-4277-BBD6-33A6EE310FDC",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " llmm",
+    "trackingId" : "590536F5-6504-47DA-B918-474E3D15857C",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "sdbs",
+    "trackingId" : "43793065-8A88-4AD6-9707-DA9312667DAC",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " swqes",
+    "trackingId" : "E141837F-6ED3-4B25-BC2C-643F907724B9",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

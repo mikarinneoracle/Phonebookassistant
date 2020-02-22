@@ -1,0 +1,11 @@
+{
+  "type" : "USER",
+  "trackingId" : "FFCF72E1-DA56-49CC-8B2F-9B78B6FD1417",
+  "name" : "PhonebookSkill",
+  "displayName" : "Phonebook Skill",
+  "description" : "Phonebook Skill",
+  "version" : "1.0",
+  "intentTrainer" : "Sakura",
+  "autoCompleteTrainingStatus" : "NO_DATA",
+  "requiresAutoCompleteTraining" : false
+}

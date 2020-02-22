@@ -1,0 +1,15 @@
+{
+  "name" : "FULLNAME",
+  "patternExpression" : "(?<=for ).*",
+  "type" : "PATTERNBASED",
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "enumRangeSize" : "4",
+  "botPrompts" : [ {
+    "text" : "Please enter name",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "trackingId" : "0406541A-8E11-485A-8325-0E55AE4F7E70"
+}

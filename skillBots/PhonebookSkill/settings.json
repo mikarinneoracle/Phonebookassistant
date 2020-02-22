@@ -1,0 +1,20 @@
+{
+  "settings" : {
+    "Multistage_Pipeline" : true,
+    "Verbose_Output" : false,
+    "Result_Size" : 10,
+    "Pipeline_Output_Size" : 100,
+    "botConfig" : [ {
+      "displayName" : "ordsUrl",
+      "name" : "ordsUrl",
+      "description" : "ordsUrl",
+      "type" : "string",
+      "value" : "https://m0xcynbe1vuybwv-phonebook55275.adb.eu-frankfurt-1.oraclecloudapps.com/ords/api/phonebook/listing/"
+    } ]
+  },
+  "conversationHistoryEnabled" : false,
+  "insightsEnabled" : true,
+  "intentResultHistoryEnabled" : false,
+  "qnAResultHistoryEnabled" : false,
+  "trackingId" : "FFCF72E1-DA56-49CC-8B2F-9B78B6FD1417"
+}

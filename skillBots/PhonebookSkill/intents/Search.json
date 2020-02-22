@@ -1,0 +1,60 @@
+{
+  "name" : "Search",
+  "trackingId" : "8FAAC47F-5FBB-4247-AD83-D99D18CF4B02",
+  "intentParameters" : [ {
+    "name" : "FULLNAME",
+    "required" : true,
+    "entity" : "FULLNAME",
+    "trackingId" : "6BFF40B4-92C7-4127-82E1-9B771BF2950E"
+  } ],
+  "exampleData" : [ {
+    "sentence" : "Get phonebook contacts for Mika",
+    "trackingId" : "A7CB5F3E-1F7B-4270-A3D1-CE2D144E2FD3",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Get contacts for Mika",
+    "trackingId" : "746FB0BD-3FD2-4089-B358-80A20ACEBE5D",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Search contacts for Mika",
+    "trackingId" : "E1B76B24-E6D2-47C7-821A-7DE5607E690F",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Search for Mika",
+    "trackingId" : "3D5A0460-6414-4F3B-A2DB-A4094266B066",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Show contacts for Mika",
+    "trackingId" : "4299E223-F29A-405E-94B0-2741009D1A74",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Get phonebook data for Mika",
+    "trackingId" : "4C9DCCBA-24D2-41F8-903D-F346E496F219",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

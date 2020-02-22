@@ -1,0 +1,96 @@
+{
+  "name" : "help",
+  "description" : "The intent that is matched when the user is seeking information about the capabilities of the skill they are currently engaged with or the digital assistant as a whole.",
+  "trackingId" : "368E651C-0E04-4CF5-8CC6-E07611A38507",
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : " Hi",
+    "trackingId" : "46F33EBD-EFD7-4639-ABC5-0569FE5CA127",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " hi",
+    "trackingId" : "A431395B-B1FC-47B6-B7F4-7B09CC511E4A",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " howdy",
+    "trackingId" : "B6C1C712-9DA9-4191-AEB6-519C9184D5C9",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " HI",
+    "trackingId" : "B59303DB-B24E-4B6E-B350-A90A968BEE26",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " manual",
+    "trackingId" : "2C1CE6EE-B545-4C7D-A0AF-A4B9E8B75B70",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " what can you do for me",
+    "trackingId" : "375E9476-CB8B-4938-9E7C-959BA3F64528",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " what can I do",
+    "trackingId" : "F9F8DBA3-7BD1-438B-BED4-B896A6F1A811",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "help",
+    "trackingId" : "5D83391B-C462-4077-A8D1-E807AE771F30",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " how can you help me",
+    "trackingId" : "2F3BB2DA-8759-42CF-9E73-71D1F653468B",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " menu",
+    "trackingId" : "AEF8E439-F0AB-4F46-B18B-ECA8D16EE69F",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : " help me",
+    "trackingId" : "064C3361-A317-4B80-9310-6806A50ADE3C",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

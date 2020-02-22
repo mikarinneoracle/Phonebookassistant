@@ -1,0 +1,68 @@
+{
+  "name" : "All",
+  "trackingId" : "718F956D-E79B-43C0-B612-3F3D7C45017C",
+  "intentParameters" : [ {
+    "name" : "FULLNAME",
+    "required" : true,
+    "entity" : "FULLNAME",
+    "trackingId" : "58C60FEE-3980-4F60-8AEB-F18589612E83"
+  } ],
+  "exampleData" : [ {
+    "sentence" : "Show listing",
+    "trackingId" : "E1A12729-78B0-49D6-8524-3F85FBB20979",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Show phonebook",
+    "trackingId" : "0A9FBD60-245B-481C-9057-7F9350024EE8",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Show all",
+    "trackingId" : "DB2471B1-E676-4DD9-A5EE-6B826B724FD0",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "All contacts",
+    "trackingId" : "E002E1F3-E4C9-4AA4-9BC6-06CED9577B38",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "All",
+    "trackingId" : "017D67C2-22D6-4584-97F1-863408CDB20C",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Get all",
+    "trackingId" : "1C1AC1A1-3D9A-4DF7-BAC4-5549B14D2D67",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Phonebook",
+    "trackingId" : "8CE0CADE-C87E-4335-A87A-B0BEBDD31824",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

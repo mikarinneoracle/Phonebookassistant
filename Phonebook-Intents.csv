@@ -1,0 +1,31 @@
+query,topIntent,conversationName,answer
+All,All,All,
+Show all,All,All,
+All contacts,All,All,
+Phonebook,All,All,
+Show phonebook,All,All,
+Show listing,All,All,
+Get all,All,All,
+Show details for Mika,Details,Details,
+Show contact details for Mika,Details,Details,
+Show contact for Mika,Details,Details,
+Details for Mika,Details,Details,
+Get details for Mika,Details,Details,
+Hi,Greeting,Greeting,"Hi! I'm your Phonebook bot.
+
+You can start by saying ""search for name [key]""
+ "
+Hello,Greeting,Greeting,"Hi! I'm your Phonebook bot.
+
+You can start by saying ""search for name [key]""
+ "
+Howdy,Greeting,Greeting,"Hi! I'm your Phonebook bot.
+
+You can start by saying ""search for name [key]""
+ "
+Get contacts for Mika,Search,Search,
+Get phonebook data for Mika,Search,Search,
+Show contacts for Mika,Search,Search,
+Search for Mika,Search,Search,
+Get phonebook contacts for Mika,Search,Search,
+Search contacts for Mika,Search,Search,

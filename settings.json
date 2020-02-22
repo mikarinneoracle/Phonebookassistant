@@ -1,0 +1,16 @@
+{
+  "settings" : {
+    "Multistage_Pipeline" : true,
+    "predominantLanguage" : "en",
+    "Verbose_Output" : false,
+    "Result_Size" : 10,
+    "Pipeline_Output_Size" : 100,
+    "botConfig" : [ ],
+    "aicConfig" : [ ]
+  },
+  "conversationHistoryEnabled" : false,
+  "insightsEnabled" : true,
+  "intentResultHistoryEnabled" : false,
+  "qnAResultHistoryEnabled" : false,
+  "trackingId" : "B2162FD7-A6B0-49D2-931F-BBD3182FAE3B"
+}

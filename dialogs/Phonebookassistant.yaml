@@ -1,0 +1,9 @@
+metadata:
+  platformVersion: "2.0"
+flows:
+  Phonebookassistant:
+    main: true
+    name: Phonebookassistant
+    context:
+      variables:
+    states: {}

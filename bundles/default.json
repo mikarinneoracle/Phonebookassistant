@@ -1,0 +1,20 @@
+{
+  "languageTag" : "default",
+  "keys" : {
+    "system.intent.help.conversationName" : {
+      "message" : "help",
+      "extensionType" : null,
+      "trackingId" : "362E57EA-4129-4C13-8920-14C75BA941CD"
+    },
+    "system.intent.exit.conversationName" : {
+      "message" : "exit",
+      "extensionType" : null,
+      "trackingId" : "777EE582-4C44-4D16-85D3-4B46FE111BE6"
+    },
+    "system.intent.unresolvedIntent.conversationName" : {
+      "message" : "unresolvedIntent",
+      "extensionType" : null,
+      "trackingId" : "B714E0A9-A88E-4174-BC15-BF23336F4E9E"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name" : "Greeting",
+  "trackingId" : "54A05144-D38C-4C1E-BEB7-0E9CC2C7B263",
+  "intentParameters" : [ ],
+  "exampleData" : [ {
+    "sentence" : "Howdy",
+    "trackingId" : "9EDF1D3F-A90C-4E62-8B11-B38D6B6B50A5",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Hi",
+    "trackingId" : "3B2F4CF0-6732-407C-B8ED-4C0E03592ABA",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Hello",
+    "trackingId" : "3AC775DB-C63B-4498-8B0D-E48216FD92F5",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}

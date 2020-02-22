@@ -1,0 +1,10 @@
+{
+  "type" : "HOSTED",
+  "name" : "Phonebook",
+  "packageFileName" : "atp_ords_phonebook-1.0.0.tgz",
+  "packageChecksum" : "450777d15ee0e00a7eb622053c8fa96e",
+  "runtime" : "node",
+  "loggingEnabled" : true,
+  "enabled" : true,
+  "trackingId" : "75991eb1-3983-409f-b584-2f7c3b64942f"
+}

@@ -1,0 +1,45 @@
+{
+  "languageTag" : "default",
+  "keys" : {
+    "system.intent.Greeting.conversationName" : {
+      "message" : "Greeting",
+      "extensionType" : null,
+      "trackingId" : "DC9ED352-ED77-44BB-B40E-FA74F6F8DABF"
+    },
+    "system.qna.Search.answer" : {
+      "message" : null,
+      "extensionType" : null,
+      "trackingId" : "7E69B331-204B-44AD-B783-8C58EC8EF8F9"
+    },
+    "system.qna.Greeting.answer" : {
+      "message" : "Hi! I'm your Phonebook bot.\n\nYou can start by saying \"search for name [key]\"",
+      "extensionType" : null,
+      "trackingId" : "D7E9CFF8-2B53-4910-A507-A55C558A15F5"
+    },
+    "system.qna.All.answer" : {
+      "message" : null,
+      "extensionType" : null,
+      "trackingId" : "DF85BBC6-E4FE-4D42-AC34-98D9A5FADAD5"
+    },
+    "system.intent.All.conversationName" : {
+      "message" : "All",
+      "extensionType" : null,
+      "trackingId" : "F77CFC7E-95B9-4EF7-A184-71AD1B851AD1"
+    },
+    "system.intent.Search.conversationName" : {
+      "message" : "Search",
+      "extensionType" : null,
+      "trackingId" : "D50B1C4F-9B91-448F-9109-18665BF5004A"
+    },
+    "system.qna.Details.answer" : {
+      "message" : null,
+      "extensionType" : null,
+      "trackingId" : "F41A78C1-A564-4B89-B26C-5D2DC9875000"
+    },
+    "system.intent.Details.conversationName" : {
+      "message" : "Details",
+      "extensionType" : null,
+      "trackingId" : "B1CE5AD2-21C7-4D52-A258-A5EA57A2870D"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name" : "Details",
+  "trackingId" : "D8239BBC-DF23-46BB-B378-7C26959E90AC",
+  "intentParameters" : [ {
+    "name" : "FULLNAME",
+    "required" : true,
+    "entity" : "FULLNAME",
+    "trackingId" : "AAA1B050-0A77-4746-8D19-BD0D14115556"
+  } ],
+  "exampleData" : [ {
+    "sentence" : "Get details for Mika",
+    "trackingId" : "B339EC46-AB25-4614-9359-890B2638E46F",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Details for Mika",
+    "trackingId" : "EA6D8FE3-1411-47D5-A92A-7137A9A36F18",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Show contact details for Mika",
+    "trackingId" : "7ACCEBAC-AF9D-473B-B628-D32032373FE9",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Show contact for Mika",
+    "trackingId" : "C79EB798-7C02-4AC7-851F-386816E5068C",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "Show details for Mika",
+    "trackingId" : "1E037AAA-3331-4596-AA85-B1FCCD60A201",
+    "translated" : null,
+    "detectedLanguage" : null,
+    "translatedLanguage" : null,
+    "translatedBy" : null,
+    "exampleEntities" : [ ]
+  } ],
+  "autoCompleteData" : [ ]
+}
