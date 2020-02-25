@@ -20,7 +20,7 @@ After creating the `ordsUrl` custom parameter you should be able to try out the 
 
 ### Integrate the Chatbot on your Phonebook webpage
 
-To integrate to chatbot to the Phonebook webpage or any other page copy do the following:
+To integrate to chatbot to the Phonebook webpage or any other page do the following:
 - Create a `Oracle Web` type Channel with a name <i>webassistant</i>, for example
 - Once created navigate to <b>Users</b> -tab and under the <b>Route To</b> select the <i>Phonebook Assistant</i> and set the <b>Channel Enabled</b> <i>on</i>
 - Insert value <i>*</i> to <b>Allowed Domains</b> and set the <b>Client Authentication Enabled</b> <i>off</i>
