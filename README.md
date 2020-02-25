@@ -5,7 +5,7 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 ### Instructions:
 
 #### Download and install
-Download the `Phonebookassistant(1.0).zip`and then using the OCI Console:
+Clone/download the `Phonebookassistant(1.0).zip`and then using the OCI Console:
 - Create Oracle Digital Assistant (ODA) service instance
 - Open the ODA service console
 - Navigate to the <b>Development/Digital assistant</b> section
@@ -54,6 +54,6 @@ To integrate to chatbot to the Phonebook webpage or any other page do the follow
     <script src="web-sdk.js" onload="initSdk('Bots')">
 ```
 - In the code above edit the <b>URI</b> and <b>ChannelId</b> so that URI is your <i>Didital Assistant Service instant URI</i> and ChannelId is the id you copied in the earlier step from <i>the Channel User</i> settings
-- Download and place the `web-sdk.js` along with your Web page
+- Clone/download and place the `web-sdk.js` along with your Web page
 
 Check out the `webchannel-index.html` for a full example. (You can use this file to replace your Phonebook index.html in the object storage to add the Chatbot on the page. Remeber to add the `web-sdk.js` to the object storage, too.)
