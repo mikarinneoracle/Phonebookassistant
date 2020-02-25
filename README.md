@@ -25,7 +25,7 @@ To integrate to chatbot to the Phonebook webpage or any other page copy do the f
 - Once created navigate to <b>Users</b> -tab and under the <b>Route To</b> select the <i>Phonebook Assistant</i> and set the <b>Channel Enabled</b> <i>on</i>
 - Insert value <i>*</i> to <b>Allowed Domains</b> and set the <b>Client Authentication Enabled</b> <i>off</i>
 - Copy the <b>ChannelId</b> for the next step
-- Inside the `<head></head>` tags of your page:
+- Inside the `<head></head>` tags of your Web page:
 ```
 <script>
         var chatWidgetSettings = {
@@ -53,4 +53,7 @@ To integrate to chatbot to the Phonebook webpage or any other page copy do the f
     </script>
     <script src="web-sdk.js" onload="initSdk('Bots')">
 ```
-- In the code above edit the <b>URI</b> and <b>ChannelId</b> so that URI is your <i>Didital Assistant Service instant URI</i> and ChannelId is the id you copied in the earlier step from <i>the Channel User settings</i>. Check out the `webchannel-index.html` for a full example (you can use this file to replace your Phonebook index.html in the object storage to add the Chatbot on the page).
+- In the code above edit the <b>URI</b> and <b>ChannelId</b> so that URI is your <i>Didital Assistant Service instant URI</i> and ChannelId is the id you copied in the earlier step from <i>the Channel User</i> settings
+- Download and place the `web-sdk.js` along with your Web page
+
+Check out the `webchannel-index.html` for a full example. (You can use this file to replace your Phonebook index.html in the object storage to add the Chatbot on the page. Remeber to add the `web-sdk.js` to the object storage, too.)
