@@ -12,9 +12,9 @@ Download the `Phonebookassistant(1.0).zip`and then using the OCI Console:
 - Import the `Phonebookassistant(1.0).zip` assistant
 
 #### Configure Phonebook ATP ORDS to the Phonebook assistant
-Navigate to the <b>Development/Skills</b> from the manu and under the <b>Settings/Configuration</b> add a new <b>Custom Parameter</b> named <i>ordsUrl</i> that links the Chatbot Skill to the Phonebook ORDS.
+Navigate to the <b>Development/Skills</b> from the menu and under the <b>Settings/Configuration</b> add a new <b>Custom Parameter</b> named <i>ordsUrl</i> that links the Chatbot Skill to the Phonebook ORDS.
 
-If you created the Phonebook with the OCI Resource Manager esiest way to get value for this is to go to your Phonebook webpage and open the <i>Inspect/Console</i> view from the Browser (with the right -click on the page) and look for the output `API URL`.
+If you created the Phonebook ORDS with the OCI Resource Manager the esiest way to get value for this is to go to your Phonebook webpage and open the <i>Inspect/Console</i> view from the Browser (with the right -click on the page) and look for the output `API URL`.
 
 After creating the `ordsUrl` custom parameter you should be able to try out the Chatbot under the Phonebook Assistant with the <b>Play</b> -button. For example try typing `hi` or `all` to the Chatbot input box.
 
@@ -53,4 +53,4 @@ To integrate to chatbot to the Phonebook webpage or any other page copy do the f
     </script>
     <script src="web-sdk.js" onload="initSdk('Bots')">
 ```
-- In the code above edit the <b>URI</b> and <b>ChannelId</b> so that URI is your <i>Didital Assistant Service instant URI</i> and ChannelId is the id you copied in the earlier step from <i>the Channel User settings</i>. Chekout the `webchannel-index.html` for a full example (you can use this replace your Phonebook index.html in the object storage to add the Chatbot on the page).
+- In the code above edit the <b>URI</b> and <b>ChannelId</b> so that URI is your <i>Didital Assistant Service instant URI</i> and ChannelId is the id you copied in the earlier step from <i>the Channel User settings</i>. Check out the `webchannel-index.html` for a full example (you can use this file to replace your Phonebook index.html in the object storage to add the Chatbot on the page).
