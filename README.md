@@ -2,6 +2,8 @@
 
 Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/README.md">Phonebook ATP ORDS demo</a> I have built a Oracle Digital Assistant Chatbot that uses the Phonebook ORDS to search and list data from the Phonebook database.
 
+<img src="https://github.com/mikarinneoracle/phonebook/blob/master/screenshot_phonebookassistant.png" width=1600>
+
 ### Instructions:
 
 #### Download and install
