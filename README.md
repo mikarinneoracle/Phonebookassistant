@@ -14,7 +14,7 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 - Train the assistant
 - Test the assistant by typing `All countries` and `Show countries for FI`, for example
 
-#### Adding a new country `<i>ES</i>` via REST
+#### Adding a new country `ES` via REST
 - The file `values.json` contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
 - Modify the included file `update-values.sh` line #4 with the <i>URL of your ODA instance</i>
 - Modify the included file `abort.sh` line #4 with the <i>URL of your ODA instance</i>
@@ -22,7 +22,13 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 - Modify the included file `oci-curl` lines #13-#16 to match your <i>tenancy and user values</i>
 - Run the following:
 ```
-><b>sh update-values.sh 1</b>
+>sh update-values.sh 
+
+Total skills 2:
+0 D897AF78-0F97-4F8F-84A8-6641A53E0D1A PhonebookSkill 1.0 PUBLISHED : -
+1 29FB8257-6DB8-4CD6-9A95-E985FF154D74 PhonebookSkill 1.1 PUBLISHED : Entity COUNTRY
+
+>sh update-values.sh 1
 Skill 1: 29FB8257-6DB8-4CD6-9A95-E985FF154D74 PhonebookSkill
 Entity 0: F2844D46-2118-4DF0-8026-43777595DEE1 COUNTRY
 
@@ -36,9 +42,9 @@ Patching completed
 ```
 - Check the status:
 ```
-><b>sh abort.sh</b>
+>sh abort.sh
 
-Total requests 27:
+Total requests 10:
 0 7302E78E-5A4F-4426-80BF-ECB9B45F42F5 ABORTED
 1 85A511B0-B05A-43DB-AE13-DB43F97A046F ABORTED
 2 29897532-EF8C-410B-9BEE-9056CE8B0CB7 ABORTED
@@ -50,9 +56,9 @@ Total requests 27:
 8 AC0C6CBB-08B7-4BD3-B39E-11FBD539FE91 COMPLETED
 9 A5AB9530-B39B-4FF4-B6BA-A03BB17DA99D COMPLETED
 ```
-- `upload-values.sh` can be also used to list the skills and entities when no parameters are supplied command line e.g. `upload-values.sh`
-- `abort.sh` can be also used to abort requests by supplying the `request id` as a poarameter from command line e.g. `abort.sh 1`
-- Test the assistant with new `COUNTRY` dynamic entity values by typing `All countries`
+
+- Note:`abort.sh` can be also used to <i>abort</i> pending requests by supplying the `request id` as a poarameter from command line e.g. `abort.sh 2`
+- Finally test the assistant with new `COUNTRY` dynamic entity values by typing `All countries`
 
 ### Instructions:
 
