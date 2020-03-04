@@ -57,7 +57,7 @@ Total requests 10:
 9 A5AB9530-B39B-4FF4-B6BA-A03BB17DA99D COMPLETED
 ```
 
-- Note:`abort.sh` can be also used to <i>abort</i> pending requests by supplying the `request id` as a parameter from command line e.g. `sh abort.sh 2`
+- Note:`abort.sh` can be also used to <i>abort</i> pending requests by supplying the `requestId index` as a parameter from command line e.g. `sh abort.sh 2`
 - Finally test the assistant with new `COUNTRY` dynamic entity values by typing `All countries`
 
 ### Instructions:
