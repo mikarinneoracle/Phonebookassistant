@@ -15,7 +15,7 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 - Test the assistant by typing `All countries` and `Show countries for FI`, for example
 
 #### Adding a new country `<i>ES</i>` via REST
-- The file `value.json` contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
+- The file `values.json` contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
 - Modify the included file `update-values.sh` line #4 with the <i>URL of your ODA instance</i>
 - Modify the included file `abort.sh` line #4 with the <i>URL of your ODA instance</i>
 - Upload your `ssh public key` in `.pem` format to your tenant under `identity/user/API keys`
