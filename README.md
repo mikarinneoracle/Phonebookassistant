@@ -4,17 +4,17 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 
 <img src="https://github.com/mikarinneoracle/phonebookassistant/blob/master/screenshot_phonebookassistant.png" width=1600>
 
-## New! Example how to update Dynamic Entity <i>Country</i> via REST
+## New! Example how to update <i>Dynamic Entity Country</i> via REST
 
 ### Instructions for using the REST API for Dynamic Entities:
 
 #### Download and install Phonebook Skill version 1.1
-- Clone/download the `Phonebookassistant(1.1).zip` file and then using the ODA service console import and replace the Phonebookassistant Phonebook Skill 1.0 with the Phonebook Skill version 1.1
+- Clone/download the `Phonebookassistant(1.1).zip` file and then using the ODA service console import and replace the Phonebookassistant `Phonebook Skill 1.0` with the `Phonebook Skill version 1.1`
 - Version 1.1 contains a new `dynamic entity COUNTRY` and some new intents using it
 - Train the assistant
 - Test the assistant by typing `All countries` and `Show countries for FI`, for example
 
-#### Adding a new country `ES` via REST
+#### Adding a new country `<i>ES</i>` via REST
 - Checkout the file `value.json` that contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
 - Modify the included file `update-values.sh` line #4 with the <i>URL of your ODA instance</i>
 - Modify the included file `abort.sh` line #4 with the <i>URL of your ODA instance</i>
