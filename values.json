@@ -1,0 +1,16 @@
+{
+	"add": [
+       {
+		"canonicalName": "FI",
+		"synonyms": ["suomi", "Suomi","fin","finland","Finland"]
+	   },
+       {
+		"canonicalName": "US",
+		"synonyms": ["us","usa", "USA","merica","America"]
+	   },
+       {
+		"canonicalName": "ES",
+		"synonyms": ["spanish", "espagnol", "Spain", "spain"]
+	   }
+    ]
+}

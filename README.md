@@ -4,6 +4,56 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 
 <img src="https://github.com/mikarinneoracle/phonebookassistant/blob/master/screenshot_phonebookassistant.png" width=1600>
 
+## New! Example how to update Dynamic Entity <i>Country</i> via REST
+
+### Instructions for using the REST API for Dynamic Entities:
+
+#### Download and install Phonebook Skill version 1.1
+- Clone/download the `Phonebookassistant(1.1).zip` file and then using the ODA service console import and replace the Phonebookassistant Phonebook Skill 1.0 with the Phonebook Skill version 1.1
+- Version 1.1 contains a new `dynamic entity COUNTRY` and some new intents using it
+- Train the assistant
+- Test the assistant by typing `All countries` and `Show countries for FI`, for example
+
+#### Adding a new country `ES` via REST
+- Checkout the file `value.json` that contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
+- Modify the included file `update-values.sh` line #4 with the <i>URL of your ODA instance</i>
+- Modify the included file `abort.sh` line #4 with the <i>URL of your ODA instance</i>
+- Upload your `ssh public key` in `.pem` format to your tenant under `identity/user/API keys`
+- Modify the included file `oci-curl` lines #13-#16 to match your <i>tenancy and user values</i>
+- Run the following:
+```
+><b>sh update-values.sh 1</b>
+Skill 1: 29FB8257-6DB8-4CD6-9A95-E985FF154D74 PhonebookSkill
+Entity 0: F2844D46-2118-4DF0-8026-43777595DEE1 COUNTRY
+
+Patching values for PhonebookSkill COUNTRY entity, request A5AB9530-B39B-4FF4-B6BA-A03BB17DA99D
+
+{"pushRequestId":"A5AB9530-B39B-4FF4-B6BA-A03BB17DA99D","totalDeleted":0,"totalAdded":3,"totalModified":0}
+Patching completed
+
+{"createdOn":"2020-03-04T11:54:54.803Z","updatedOn":"2020-03-04T11:54:55.524Z","id":"A5AB9530-B39B-4FF4-B6BA-A03BB17DA99D","status":"TRAINING","statusMessage":"Request Pushed into training, on user request"}
+
+```
+- Check the status:
+```
+><b>sh abort.sh</b>
+
+Total requests 27:
+0 7302E78E-5A4F-4426-80BF-ECB9B45F42F5 ABORTED
+1 85A511B0-B05A-43DB-AE13-DB43F97A046F ABORTED
+2 29897532-EF8C-410B-9BEE-9056CE8B0CB7 ABORTED
+3 B28D0467-630D-48D3-A91E-5BCD9F350DEE COMPLETED
+4 2F1B6C3A-FD26-4259-B099-3C2A8039085A COMPLETED
+5 5466E8D1-6152-47B9-AC9A-565B69051831 COMPLETED
+6 CD1D5EF8-C580-4614-91A8-BF8530A3BAEB COMPLETED
+7 87EA0EBB-9BAC-4C9F-A021-D755FC074F4A COMPLETED
+8 AC0C6CBB-08B7-4BD3-B39E-11FBD539FE91 COMPLETED
+9 A5AB9530-B39B-4FF4-B6BA-A03BB17DA99D COMPLETED
+```
+- `upload-values.sh` can be also used to list the skills and entities when no parameters are supplied command line e.g. `upload-values.sh`
+- `abort.sh` can be also used to abort requests by supplying the `request id` as a poarameter from command line e.g. `abort.sh 1`
+- Test the assistant with new `COUNTRY` dynamic entity values by typing `All countries`
+
 ### Instructions:
 
 #### Download and install
