@@ -9,10 +9,11 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 ### Instructions for using the REST API for Dynamic Entities:
 
 #### Download and install Phonebook Skill version 1.1
+- Prerequisite is that you have Phonebookassistant up and running in ODA (see the <a href="### Instructions">Instructions</a> below)
 - Clone/download the `Phonebookassistant(1.1).zip` file and then using the ODA service console import and replace the Phonebookassistant `Phonebook Skill 1.0` with the `Phonebook Skill version 1.1`
 - Version 1.1 contains a new `dynamic entity COUNTRY` and some new intents using it
 - Train the assistant
-- Test the assistant by typing `All countries` and `Show countries for FI`, for example
+- Test the assistant by typing `All countries` and `Show country FI`, for example
 
 #### Adding a new country `ES` via REST
 - The file `values.json` contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
