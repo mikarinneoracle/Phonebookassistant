@@ -114,5 +114,6 @@ To integrate to chatbot to the Phonebook webpage or any other page do the follow
 ```
 - In the code above edit the <b>URI</b> and <b>ChannelId</b> so that URI is your <i>Didital Assistant Service instant URI</i> and ChannelId is the id you copied in the earlier step from <i>the Channel User</i> settings
 - Clone/download and place the `web-sdk.js` along with your Web page
+- Finally you can publish the assistant (optional)
 
 Check out the `webchannel-index.html` for a full example. (You can use this file to replace your Phonebook index.html in the object storage to add the Chatbot on the page. Remeber to add the `web-sdk.js` to the object storage, too.)
