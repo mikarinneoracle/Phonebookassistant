@@ -8,7 +8,7 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 
 ### Instructions for using the REST API for Dynamic Entities:
 #### Prerequisites:
-- Have the <a href="https://github.com/mikarinneoracle/phonebook/blob/v.1.1/phonebook-stack-1-1.zip">Phonebook ATP ORDS demo `v.1.1`</a> up and running using OCI Resource Manager
+- Have <a href="https://github.com/mikarinneoracle/phonebook/blob/v.1.1/phonebook-stack-1-1.zip">Phonebook ATP ORDS demo `v.1.1`</a> up and running using OCI Resource Manager
 - Have Phonebookassistant 1.0 up and running in ODA in `DRAFT` mode so don't publish yet to be able to make changes to it (see the <a href="#Instructions">Instructions</a> below) against
 your Phonebook ATP ORDS `v.1.1` REST API
 
