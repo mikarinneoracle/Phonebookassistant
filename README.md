@@ -16,7 +16,7 @@ your Phonebook ATP ORDS `v.1.1` REST API
 - Clone/download the `PhonebookSkill(1.1).zip` file and then using the ODA service console import and replace the Phonebookassistant `Phonebook Skill 1.0` with the `Phonebook Skill version 1.1`
 - Version 1.1 contains a new `dynamic entity COUNTRY` and some new intents using it
 - Train the assistant
-- Test the assistant by typing `All countries` and `Show country FI`, for example (in case this fails make sure to have some entity values in `COUNTRY` like `FI` and `US`)
+- Test the assistant by typing `All countries` and `Show country FI`, for example (in case these fail make sure to have some COUNTRY entity values e.g. <i>FI'</i> and <i>'US'</i>)
 
 #### Adding a new country `ES` via REST
 - The file `values.json` contains the (new) values for `COUNTRY` dynamic entity, including the value `ES` with some synonyms. You can add more countries if you like.
