@@ -7,6 +7,9 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 ## New! Example how to update <i>Dynamic Entity Country</i> via REST
 
 ### Instructions for using the REST API for Dynamic Entities:
+
+<b><i>Note: Phonebook Assistant Skill `v.1.1` also fixes some bugs from the 1.0 version.</i></b>
+
 #### Prerequisites:
 - Have <a href="https://github.com/mikarinneoracle/phonebook/blob/v.1.1/phonebook-stack-1-1.zip">Phonebook ATP ORDS demo `v.1.1`</a> up and running using OCI Resource Manager
 - Have Phonebookassistant 1.0 up and running in ODA in `DRAFT` mode so don't publish yet to be able to make changes to it (see the <a href="#Instructions">Instructions</a> below) against
