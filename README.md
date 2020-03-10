@@ -9,7 +9,8 @@ Following my <a href="https://github.com/mikarinneoracle/phonebook/blob/master/R
 ### Instructions for using the REST API for Dynamic Entities:
 #### Prerequisites:
 - Have the Phonebook <a href="https://github.com/mikarinneoracle/phonebook/blob/v.1.1/phonebook-stack-1-1.zip">ATP ORDS demo `v.1.1`</a> up and running using OCI Resource Manager
-- Have Phonebookassistant 1.0 up and running in ODA in `DRAFT` mode so don't publish yet to be able to make changes to it (see the <a href="#Instructions">Instructions</a> below)
+- Have Phonebookassistant 1.0 up and running in ODA in `DRAFT` mode so don't publish yet to be able to make changes to it (see the <a href="#Instructions">Instructions</a> below) against
+your Phonebook ATP ORDS `v.1.1` REST API
 
 #### Download and install Phonebook Skill version 1.1
 - Clone/download the `PhonebookSkill(1.1).zip` file and then using the ODA service console import and replace the Phonebookassistant `Phonebook Skill 1.0` with the `Phonebook Skill version 1.1`
