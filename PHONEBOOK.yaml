@@ -1,0 +1,388 @@
+#metadata: information about the flow
+#  platformVersion: the version of the bots platform that this flow was written to work with 
+metadata:
+  platformVersion: "1.1"
+main: true
+name: PHONEBOOK
+#context: Define the variables which will used throughout the dialog flow here.
+context:
+  variables:
+    contactArr: string
+    hasMore: boolean
+    start: int
+    next: int
+    iResult: nlpresult
+    fullname: FULLNAME
+    country: COUNTRY
+
+states:
+
+  setStart:
+    component: System.SetVariable
+    properties:
+      variable: start
+      value: 0
+    transitions: {}
+    
+  setNext:
+    component: System.SetVariable
+    properties:
+      variable: next
+      value: 0
+    transitions: {}
+    
+  intent:
+    component: System.Intent
+    properties:
+      variable: iResult
+      optionsPrompt: Do you want to
+      daIntercept: always
+    transitions:
+      actions:
+        All: all
+        Search: searchResolve
+        Details: detailsResolve
+        Bycountry: countryResolve
+        Countries: countries
+        unresolvedIntent: unresolved
+
+  searchResolve:
+    component: System.ResolveEntities
+    properties:
+      variable: fullname
+      nlpResultVariable: iResult
+      maxPrompts: 2
+      cancelPolicy: immediate
+    transitions:
+      actions:
+        cancel: notFound
+        next: search
+
+  # Custom component that receives the contact information from our ORDS endpoint in ATP
+  search:
+    component: search
+    properties:
+      ordsUrl: "${system.config.ordsUrl}"
+      fullname: "%25${fullname.value}%25"
+      offset: "${next.value}"
+    transitions:
+      actions:
+        next: showList
+        error: errorOutput
+
+  # Custom component that receives the contact information from our ORDS endpoint in ATP
+  all:
+    component: search
+    properties:
+      ordsUrl: "${system.config.ordsUrl}"
+      fullname: "%25"
+      offset: "${next.value}"
+    transitions:
+      actions:
+        next: showAll
+        error: errorOutput
+        
+  countryResolve:
+    component: System.ResolveEntities
+    properties:
+      variable: country
+      nlpResultVariable: iResult
+      maxPrompts: 2
+      cancelPolicy: immediate
+    transitions:
+      actions:
+        cancel: notFound
+        next: bycountry
+
+  # Custom component that receives the contact information from our ORDS endpoint in ATP
+  bycountry:
+    component: bycountry
+    properties:
+      ordsUrl: "${system.config.ordsUrl}"
+      country: "${country.value}"
+      offset: "${next.value}"
+    transitions:
+      actions:
+        next: showCountry
+        error: errorOutput
+        
+  # CommonResponse component dynamically showing the data we get 4 hits at a time
+
+  showList:
+    component: System.CommonResponse
+    properties:
+      metadata:
+        responseItems:
+          - type: text
+            text: "Here's a list of Phonebook contacts by ${fullname.value} (${start} - ${next}):"
+            separateBubbles: true
+            name: Contacts
+          - type: cards
+            cardLayout: vertical
+            name: ContactCard
+            cards:
+              - title: "${contactArr.fullname}"
+                #  description: "${contactArr.phonenumber}, ${contactArr.countrycode}"
+                name: Contact
+                iteratorVariable: contactArr
+                rangeStart: "0"
+                rangeSize: "4"
+
+                actions:
+                  - label: "Details for ${contactArr.fullname}"
+                    type: postback
+                    keyword: "${contactArr.fullname}"
+                    payload:
+                      action: details
+                      variables:
+                        fullname: "${contactArr.fullname}"
+
+        globalActions:
+          - label: More contacts
+            type: postback
+            skipAutoNumber: true
+            visible:
+              expression: "${hasMore.value}"
+            payload:
+              action: more
+            name: Show more
+          - label: Done
+            type: postback
+            payload:
+              action: done
+            name: Done
+      processUserMessage: true
+    transitions:
+      actions:
+        details: details
+        more: search
+        done: finish
+        textReceived: intent
+
+  showAll:
+    component: System.CommonResponse
+    properties:
+      metadata:
+        responseItems:
+          - type: text
+            text: "Here's a list of All Phonebook contacts (${start} - ${next}):"
+            separateBubbles: true
+            name: Contacts
+          - type: cards
+            cardLayout: vertical
+            name: ContactCard
+            cards:
+              - title: "${contactArr.fullname}"
+                #  description: "${contactArr.phonenumber}, ${contactArr.countrycode}"
+                name: Contact
+                iteratorVariable: contactArr
+                rangeStart: "0"
+                rangeSize: "4"
+
+                actions:
+                  - label: "Details for ${contactArr.fullname}"
+                    type: postback
+                    keyword: "${contactArr.fullname}"
+                    payload:
+                      action: details
+                      variables:
+                        fullname: "${contactArr.fullname}"
+
+        globalActions:
+          - label: More contacts
+            type: postback
+            skipAutoNumber: true
+            visible:
+              expression: "${hasMore.value}"
+            payload:
+              action: more
+            name: Show more
+          - label: Done
+            type: postback
+            payload:
+              action: done
+            name: Done
+      processUserMessage: true
+    transitions:
+      actions:
+        details: details
+        more: all
+        done: finish
+        textReceived: intent
+        
+  showCountry:
+    component: System.CommonResponse
+    properties:
+      metadata:
+        responseItems:
+          - type: text
+            text: "Here's a list of Phonebook contacts by ${country.value} (${start} - ${next}):"
+            separateBubbles: true
+            name: Contacts
+          - type: cards
+            cardLayout: vertical
+            name: ContactCard
+            cards:
+              - title: "${contactArr.fullname}"
+                #  description: "${contactArr.phonenumber}, ${contactArr.countrycode}"
+                name: Contact
+                iteratorVariable: contactArr
+                rangeStart: "0"
+                rangeSize: "4"
+
+                actions:
+                  - label: "Details for ${contactArr.fullname}"
+                    type: postback
+                    keyword: "${contactArr.fullname}"
+                    payload:
+                      action: details
+                      variables:
+                        fullname: "${contactArr.fullname}"
+
+        globalActions:
+          - label: More contacts
+            type: postback
+            skipAutoNumber: true
+            visible:
+              expression: "${hasMore.value}"
+            payload:
+              action: more
+            name: Show more
+          - label: Done
+            type: postback
+            payload:
+              action: done
+            name: Done
+      processUserMessage: true
+    transitions:
+      actions:
+        details: details
+        more: bycountry
+        done: finish
+        textReceived: intent
+  
+  # Show countries
+  
+  countries:
+    component: System.CommonResponse
+    properties:
+      processUserMessage: true
+      keepTurn: false
+      variable: "country"
+      nlpResultVariable: "iResult"       
+      maxPrompts: 
+      autoNumberPostbackActions:
+      translate:
+      metadata: 
+        responseItems:         
+        - type: "text"  
+          text: "Phonebook countries:"
+          actions:
+          - label: "Show country ${enumValue}"
+            type: "postback"
+            keyword: "${enumValue}" 
+            payload:
+              action: bycountry
+              variables:
+                country: "${enumValue}"
+            iteratorVariable: "country.type.enumValues"
+    transitions:
+      actions:
+        bycountry : bycountry
+        more: countries
+        done: finish
+        textReceived: intent
+        
+  detailsResolve:
+    component: System.ResolveEntities
+    properties:
+      variable: fullname
+      nlpResultVariable: iResult
+      maxPrompts: 2
+      cancelPolicy: immediate
+    transitions:
+      actions:
+        cancel: notFound
+        next: details
+
+  details:
+    component: search
+    properties:
+      ordsUrl: "${system.config.ordsUrl}"
+      fullname: "${fullname.value}"
+    transitions:
+      actions:
+        next: showDetail
+        error: errorOutput
+
+  showDetail:
+    component: System.CommonResponse
+    properties:
+      metadata:
+        responseItems:
+          - type: text
+            text: "Contact:"
+            separateBubbles: true
+            name: Contacts
+          - type: cards
+            cardLayout: vertical
+            name: ContactCard
+            cards:
+              - title: "${contactArr.firstname} ${contactArr.lastname}"
+                description: "${contactArr.phonenumber}, ${contactArr.countrycode}"
+                name: ContactInfo
+                iteratorVariable: contactArr
+                rangeStart: "0"
+                rangeSize: "1"
+
+                actions:
+                  - label: "Call ${contactArr.firstname}"
+                    type: call
+                    payload:
+                      phoneNumber: "${contactArr.phonenumber}"
+        globalActions:
+          - label: Done
+            type: postback
+            payload:
+              action: done
+            name: Done
+            
+      processUserMessage: true
+    transitions:
+      actions:
+        done: finish
+        textReceived: intent
+
+  # A couple of necessary outputs
+
+  finish:
+    component: System.CommonResponse
+    properties:
+      processUserMessage: false
+      metadata:
+        responseItems:
+          - type: text
+            text: Hope I was of help.
+    transitions:
+      return: done
+
+  notFound:
+    component: System.Output
+    properties:
+      text: No contact with that name found.
+    transitions:
+      return: done
+
+  errorOutput:
+    component: System.Output
+    properties:
+      text: "Something went wrong, please check the logs."
+    transitions:
+      return: done
+
+  unresolved:
+    component: System.Output
+    properties:
+      text: "Couldn't resolve, sorry!"
+    transitions:
+      return: done
